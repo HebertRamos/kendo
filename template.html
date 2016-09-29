@@ -1,0 +1,80 @@
+<div class="k-edit-form-container">
+    <div class="k-edit-label">
+        <label for="title">Title</label>
+    </div>
+    <div data-container-for="title" class="k-edit-field">
+        <input id="title" type="text" class="k-input k-textbox" name="title" required="required"
+               data-bind="value:title">
+    </div>
+    <div class="k-edit-label">
+        <label for="start">Start:</label>
+    </div>
+    <div data-container-for="start" class="k-edit-field">
+                    <span class="k-widget k-datetimepicker k-header" style="display: none;">
+                        <span class="k-picker-wrap k-state-default">
+                        <input type="text" required="" data-type="date"
+                               data-role="datetimepicker"
+                               data-bind="value:start,invisible:isAllDay"
+                               data-validate="false" name="start"
+                               data-timezone="Etc/UTC" class="k-input"
+                               role="combobox" aria-expanded="false"
+                               aria-disabled="false"
+                               style="width: 100%;"><span unselectable="on"
+                                                          class="k-select"><span
+                                class="k-link k-link-date" aria-label="Open the date view"><span unselectable="on"
+                                                                                                 class="k-icon k-i-calendar"></span></span><span
+                                class="k-link k-link-time" aria-label="Open the time view"><span unselectable="on"
+                                                                                                 class="k-icon k-i-clock"></span></span></span></span></span><span
+            class="k-widget k-datepicker k-header" style=""><span
+            class="k-picker-wrap k-state-default"><input type="text" required="" data-type="date"
+                                                         data-role="datepicker"
+                                                         data-bind="value:start,visible:isAllDay"
+                                                         data-validate="true" name="start"
+                                                         data-timezone="Etc/UTC" class="k-input"
+                                                         role="combobox" aria-expanded="false"
+                                                         aria-disabled="false" style="width: 100%;"><span
+            unselectable="on" class="k-select" aria-label="select" role="button"><span
+            class="k-icon k-i-calendar"></span></span></span></span><span
+            data-bind="text: startTimezone"></span><span data-for="start" class="k-invalid-msg"
+                                                         style="display: none;"></span>
+    </div>
+    <div class="k-edit-label">
+        <label for="end">End:</label>
+    </div>
+    <div data-container-for="end" class="k-edit-field">
+                    <span class="k-widget k-datetimepicker k-header" style="display: none;"><span
+                            class="k-picker-wrap k-state-default"><input type="text" required="" data-type="date"
+                                                                         data-role="datetimepicker"
+                                                                         data-bind="value:end,invisible:isAllDay"
+                                                                         data-validate="false" name="end"
+                                                                         data-timezone="Etc/UTC" class="k-input"
+                                                                         role="combobox" aria-expanded="false"
+                                                                         aria-disabled="false"
+                                                                         style="width: 100%;"><span unselectable="on"
+                                                                                                    class="k-select"><span
+                            class="k-link k-link-date" aria-label="Open the date view"><span unselectable="on"
+                                                                                             class="k-icon k-i-calendar"></span></span><span
+                            class="k-link k-link-time" aria-label="Open the time view"><span unselectable="on"
+                                                                                             class="k-icon k-i-clock"></span></span></span></span></span><span
+            class="k-widget k-datepicker k-header" style=""><span
+            class="k-picker-wrap k-state-default"><input type="text" required="" data-type="date"
+                                                         data-role="datepicker"
+                                                         data-bind="value:end,visible:isAllDay"
+                                                         data-validate="true" name="end"
+                                                         data-timezone="Etc/UTC" class="k-input"
+                                                         role="combobox" aria-expanded="false"
+                                                         aria-disabled="false" style="width: 100%;"><span
+            unselectable="on" class="k-select" aria-label="select" role="button"><span
+            class="k-icon k-i-calendar"></span></span></span></span><span
+            data-bind="text: endTimezone"></span><span
+            data-bind="text: startTimezone, invisible: endTimezone"></span><span data-for="end"
+                                                                                 class="k-invalid-msg"
+                                                                                 style="display: none;"></span>
+    </div>
+    <div class="k-edit-label">
+        <label for="funcionario">Funcionário: </label>
+    </div>
+    <div data-container-for="funcionario" class="k-edit-field">
+
+    </div>
+</div>

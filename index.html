@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>html {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }</style>
+    <title></title>
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.914/styles/kendo.common-material.min.css"/>
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.914/styles/kendo.material.min.css"/>
+    <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.3.914/styles/kendo.material.mobile.min.css"/>
+
+    <script src="//kendo.cdn.telerik.com/2016.3.914/js/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2016.3.914/js/angular.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2016.3.914/js/kendo.timezones.min.js"></script>
+</head>
+<body>
+<div id="example" ng-app="treinamentoApp">
+    <div ng-controller="treinamentoController">
+        <div kendo-scheduler k-options="schedulerOptions">
+            <span k-event-template class='custom-event'>{{dataItem.title}}</span>
+
+            <div k-all-day-event-template class='custom-all-day-event'>{{dataItem.title}}</div>
+        </div>
+
+        <script id="editor" type="text/x-kendo-template">
+
+
+        </script>
+
+
+    </div>
+
+    <style>
+        .custom-event {
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+
+        .custom-all-day-event {
+            text-align: center;
+            text-transform: uppercase
+        }
+    </style>
+</div>
+
+<script src="assets/scripts-angular.js"></script>
+
+</body>
+</html>
