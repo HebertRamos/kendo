@@ -2,7 +2,22 @@
 var treinamentoApp = angular.module('treinamentoApp', ['kendo.directives']);//, 'ngRoute'
 
 treinamentoApp.controller('treinamentoController', ['$scope', function($scope){
+
+
+    var dataSource = new kendo.data.DataSource({
+            transport:{
+                read:'http://localhost:8080/funcionarios'
+            }
+    });
+
+    $scope.funcionarioOptions = {
+        dataSource:dataSource,
+        dataValueField:'id',
+        dataTextField:'nome',
+    };
 	
+console.log($("#editor").html());
+
 	$scope.schedulerOptions = {
 		date: new Date("2013/6/13"),
         startTime: new Date("2013/6/13 07:00 AM"),
